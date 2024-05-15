@@ -10,6 +10,9 @@
   &__container {
     display: flex;
     flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 1000px;
     gap: 10px;
   }
 
@@ -30,6 +33,7 @@
     font-size: 16px;
     font-weight: bold;
     width: 50px;
+    border: 1px solid black;
   }
 
   &__footer {
@@ -41,16 +45,36 @@
 
   &__result {
     font-size: 21px;
-    margin-bottom: 25px;
 
     span {
       font-weight: bold;
     }
   }
 
+  &__modif {
+    font-size: 16px;
+    outline: none;
+    font-size: 16px;
+    font-weight: bold;
+    width: 80px;
+    border: 1px solid black;
+  }
+
+  &__history {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px 0;
+    gap: 15px;
+
+    &-title {
+      font-weight: bold;
+      font-size: 16px;
+    }
+  }
+
   &__btn {
     outline: none;
-    width: fit-content;
     height: 70px;
     font-weight: bold;
     font-size: 17px;
@@ -58,6 +82,8 @@
     border-color: transparent;
     transition: all 0.3s ease;
     cursor: pointer;
+    margin-top: 20px;
+    width: 200px;
 
     &:hover {
       background-color: rgb(218, 115, 64);
@@ -65,6 +91,19 @@
 
     &:active {
       transform: scale(1.1);
+    }
+
+    &_delete {
+      height: auto;
+      margin-top: 0;
+      font-weight: normal;
+      width: 100px;
+    }
+
+    &__list {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
   }
 }
