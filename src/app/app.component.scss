@@ -1,0 +1,43 @@
+.app {
+  display: grid;
+  width: 100%;
+  min-height: 100vh;
+  grid-template-areas:
+    "h h h h"
+    "a m m m"
+    "a m m m"
+    "f f f f";
+  grid-template-rows: 100px 1fr 1fr 60px;
+  grid-template-columns: 1fr 1fr 1fr 2fr;
+
+  &__header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: h;
+    border-bottom: 1px solid #eee;
+
+    &__title {
+      font-size: 24px;
+      font-weight: bold;
+      text-align: center;
+    }
+  }
+
+  &__aside {
+    grid-area: a;
+    border-bottom: 1px solid #eee;
+  }
+
+  &__main {
+    grid-area: m;
+    border-bottom: 1px solid #eee;
+    border-left: 1px solid #eee;
+    padding: 50px;
+  }
+
+  &__footer {
+    grid-area: f;
+    border-left: 1px solid #eee;
+  }
+}
