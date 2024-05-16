@@ -2,7 +2,6 @@ import { Routes } from '@angular/router';
 
 import { MyCalculatorComponent } from '../calculator/components/my-calculator/my-calculator.component';
 import { MyEmptyPage } from '../components/empty-route/empty-route.component';
-import { MyObjectListComponent } from '../object-list/components/list/object-list.component';
 
 export const routesList: Routes = [
   {
@@ -20,10 +19,6 @@ export const routesList: Routes = [
       import('../object-list/object-list.module').then(
         (m) => m.MyObjectListModule
       ),
-  },
-  {
-    path: '**',
-    component: MyEmptyPage,
   },
 ];
 
