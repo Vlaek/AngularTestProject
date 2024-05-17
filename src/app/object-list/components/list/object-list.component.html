@@ -6,4 +6,9 @@
   >
     <span>{{ item.title }}</span>
   </div>
+  @if (myMusicStore$ | async; as list) {
+    @for (item of list; track item.id) {
+      <div class="item">{{ item.author }}</div>
+    }
+  }
 </div>
