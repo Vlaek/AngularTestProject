@@ -1,3 +1,5 @@
+<h2 class="object-list__title">Object List</h2>
+<div class="object-list__separator"></div>
 <div class="object-list">
   <div
     *ngFor="let item of myObjectsList"
@@ -6,29 +8,4 @@
   >
     <span>{{ item.title }}</span>
   </div>
-</div>
-<div class="object-list__separator"></div>
-<div class="object-list">
-  @if (myMusicStore$ | async; as list) {
-    @for (item of list; track item.id) {
-      <div class="object-list__album">
-        <img
-          class="object-list__album__img"
-          [src]="'assets/img/' + item.img"
-          [alt]='item.title'
-        />
-        <div class="object-list__album__info">
-          <p class="object-list__album__text">
-            {{ item.title }}
-          </p>
-          <p class="object-list__album__text object-list__album__text_bold">
-            {{ item.author }}
-          </p>
-          <p class="object-list__album__text object-list__album__text_bold">
-            ${{ item.price }}
-          </p>
-        </div>
-      </div>
-    }
-  }
 </div>

@@ -19,6 +19,13 @@ export const routesList: Routes = [
         (m) => m.MyObjectListModule
       ),
   },
+  {
+    path: 'music-list',
+    loadChildren: () =>
+      import('../music-list/music-list.module').then(
+        (m) => m.MyMusicListModule
+      ),
+  },
 ];
 
 export interface MyObject {

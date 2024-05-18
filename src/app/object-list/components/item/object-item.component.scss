@@ -1,5 +1,5 @@
 .object {
-  width: 50%;
+  width: 100%;
   height: fit-content;
 
   display: flex;
@@ -7,11 +7,13 @@
   gap: 30px;
 
   h3 {
-    font-size: 18px;
+    font-size: 32px;
     font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
   }
 
   span {
-    font-size: 15px;
+    font-size: 30px;
   }
 }
