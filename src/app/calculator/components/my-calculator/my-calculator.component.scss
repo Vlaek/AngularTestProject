@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   gap: 30px;
-  border: 2px solid #eee;
+  border: 2px solid $main-neutral;
   border-radius: 30px;
   width: fit-content;
   padding: 30px;
@@ -86,7 +86,7 @@
     width: 200px;
 
     &:hover {
-      background-color: rgb(40, 210, 80);
+      background-color: $main-green
     }
 
     &:active {

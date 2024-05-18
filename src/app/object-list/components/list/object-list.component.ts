@@ -2,8 +2,8 @@ import { Component } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { MyObject, myObjects } from '../../../shared/constants';
 import { MyObjectListService } from './object-list.service';
-import { IMusicStore } from '../../../services/api/types/response';
 import { Observable } from 'rxjs';
+import { IMusicStore } from '../../../services/api/types/model';
 
 @Component({
   selector: 'my-object-list',

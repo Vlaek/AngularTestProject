@@ -32,8 +32,8 @@ input::-ms-clear {
 
 body,
 html {
-  background-color: #202c3c;
-  color: #eee;
+  background-color: $main-background;
+  color: $main-neutral;
   font-family: "Montserrat", sans-serif;
   font-weight: 300;
   height: 100%;

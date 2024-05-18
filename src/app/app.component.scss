@@ -15,7 +15,7 @@
     justify-content: center;
     align-items: center;
     grid-area: h;
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid $main-neutral;
 
     &__title {
       font-size: 24px;
@@ -26,18 +26,18 @@
 
   &__aside {
     grid-area: a;
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid $main-neutral;
   }
 
   &__main {
     grid-area: m;
-    border-bottom: 1px solid #eee;
-    border-left: 1px solid #eee;
+    border-bottom: 1px solid $main-neutral;
+    border-left: 1px solid $main-neutral;
     padding: 50px;
   }
 
   &__footer {
     grid-area: f;
-    border-left: 1px solid #eee;
+    border-left: 1px solid $main-neutral;
   }
 }

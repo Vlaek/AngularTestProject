@@ -11,11 +11,11 @@
   }
 
   &__link {
-    color: #eee;
+    color: $main-neutral;
     transition: all 0.3s ease;
 
     &:hover {
-      color: rgb(40, 210, 80);
+      color: $main-green;
     }
   }
 }
