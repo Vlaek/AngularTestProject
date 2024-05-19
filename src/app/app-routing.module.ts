@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { routesList } from './shared/constants';
-import { MyEmptyPage } from './components/empty-route/empty-route.component';
+import { MyEmptyPage } from './features/components/empty-route/empty-route.component';
 
 const emptyRoot = {
   path: '**',

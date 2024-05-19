@@ -1,0 +1,25 @@
+<div class="item" *ngIf="myTrackItem$">
+  <h3 class="item__title">{{ myTrackItem$.author }}</h3>
+  <div class="item__separator"></div>
+  <div class="item__container">
+    <div class="item__block item__block_left">
+      <img
+        class="item__block__img" 
+        [src]="'assets/img/tracklist/' + myTrackItem$.author + '.png'"
+        [alt]="myTrackItem$.name"
+        draggable="false"
+      >
+    </div>
+    <div class="item__block item__block_right">
+      <p class="item__block__text item__block__text_bold">
+        {{ myTrackItem$.name }}
+      </p>
+      <p class="item__block__text item__block__text_bold">
+        {{ myTrackItem$.duration }}
+      </p>
+      <p class="item__block__text item__block__text_bold item__block__text_red">
+        {{ myTrackItem$.explicit ? 'explicit' : '' }}
+      </p>
+    </div>
+  </div>
+</div>

@@ -1,11 +1,14 @@
 import { Routes } from '@angular/router';
 
-import { MyCalculatorComponent } from '../calculator/components/my-calculator/my-calculator.component';
+// import { MyCalculatorComponent } from '../calculator/components/my-calculator/my-calculator.component';
 
 export const routesList: Routes = [
   {
     path: 'calculator',
-    component: MyCalculatorComponent,
+    loadChildren: () =>
+      import('../features/calculator/my-calculator.module').then(
+        (m) => m.MyCalculatorModule
+      ),
   },
   {
     path: '',
@@ -15,15 +18,22 @@ export const routesList: Routes = [
   {
     path: 'object-list',
     loadChildren: () =>
-      import('../object-list/object-list.module').then(
+      import('../features/object-list/object-list.module').then(
         (m) => m.MyObjectListModule
       ),
   },
   {
     path: 'music-list',
     loadChildren: () =>
-      import('../music-list/music-list.module').then(
+      import('../features/music-list/music-list.module').then(
         (m) => m.MyMusicListModule
+      ),
+  },
+  {
+    path: 'track-list',
+    loadChildren: () =>
+      import('../features/track-list/track-list.module').then(
+        (m) => m.MyTrackListModule
       ),
   },
 ];
