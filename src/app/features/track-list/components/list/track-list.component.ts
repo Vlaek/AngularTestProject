@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { MyTrackListService } from '../../track-list.service';
 import { Observable } from 'rxjs';
-import { ITrack } from '../../../../shared/types/model';
+import { ITrack } from '@shared/types/model';
 
 @Component({
   selector: 'my-track-list',

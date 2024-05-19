@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { MyMusicListService } from '../../music-list.service';
 import { Observable } from 'rxjs';
-import { IMusicStore } from '../../../../shared/types/model';
+import { IMusicStore } from '@shared/types/model';
 
 @Component({
   selector: 'my-music-list',

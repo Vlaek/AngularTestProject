@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Params } from '@angular/router';
-import { ITrack } from '../../../../shared/types/model';
+import { ITrack } from '@shared/types/model';
 import { MyTrackListService } from '../../track-list.service';
 
 @Component({

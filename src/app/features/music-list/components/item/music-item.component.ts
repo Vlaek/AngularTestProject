@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Params } from '@angular/router';
-import { IMusicStore } from '../../../../shared/types/model';
+import { IMusicStore } from '@shared/types/model';
 import { MyMusicListService } from '../../music-list.service';
 
 @Component({
