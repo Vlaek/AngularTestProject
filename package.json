@@ -1,5 +1,10 @@
 {
   "name": "angular",
+  "author": "Vladislav Eichwald",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Vlaek/AngularTestProject/"
+  },
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
