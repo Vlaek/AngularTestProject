@@ -1,0 +1,24 @@
+<div class="item" *ngIf="myProductItem$">
+  <h3 class="item__title">{{ myProductItem$.name }}</h3>
+  <div class="item__separator"></div>
+  <div class="item__container">
+    <div class="item__block item__block_left">
+      <img
+        class="item__block__img" 
+        [src]="myProductItem$.image_url"
+        draggable="false"
+      >
+    </div>
+    <div class="item__block item__block_right">
+      <p class="item__block__text item__block__text_bold">
+        {{ myProductItem$.name }}
+      </p>
+      <p class="item__block__text item__block__text_bold">
+        {{ myProductItem$.category }}
+      </p>
+      <p class="item__block__text item__block__text_bold item__block__text_red">
+        Views: {{ myProductItem$.views }}
+      </p>
+    </div>
+  </div>
+</div>

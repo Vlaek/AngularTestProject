@@ -23,8 +23,9 @@ export interface ITrack {
 }
 
 export interface IProduct {
+  id: number;
   name: string;
-  img: string;
+  image_url: string;
   category: string;
   views: number;
   start_date: string;

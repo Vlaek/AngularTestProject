@@ -1,0 +1,23 @@
+<h2 class="list__title">Track List</h2>
+<div class="list__separator"></div>
+<div class="list">
+  @if (myProductList$ | async; as list) {
+    @for (item of list; track item.name) {
+      <div class="list__album" (click)="redirectTo(item.id)">
+        <img
+          class="list__album__img"
+          [src]="item.image_url"
+          draggable="false"
+        />
+        <div class="list__album__info">
+          <p class="list__album__text list__album__text_small" [title]="item.name">
+            {{ item.name }}
+          </p>
+          <p class="list__album__text list__album__text_bold">
+            {{ item.category }}
+          </p>
+        </div>
+      </div>
+    }
+  }
+</div>

@@ -1,7 +1,5 @@
 import { Routes } from '@angular/router';
 
-// import { MyCalculatorComponent } from '../calculator/components/my-calculator/my-calculator.component';
-
 export const routesList: Routes = [
   {
     path: 'calculator',
@@ -34,6 +32,13 @@ export const routesList: Routes = [
     loadChildren: () =>
       import('../features/track-list/track-list.module').then(
         (m) => m.MyTrackListModule
+      ),
+  },
+  {
+    path: 'product-list',
+    loadChildren: () =>
+      import('../features/product-list/product-list.module').then(
+        (m) => m.MyProductListModule
       ),
   },
 ];
