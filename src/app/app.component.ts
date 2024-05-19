@@ -11,7 +11,7 @@ const correctDateFormat = (date: string) => {
 };
 
 const fullDate = correctDateFormat(
-  `${currentDate.getDate()}.${currentDate.getMonth()}.${currentDate.getFullYear()}`
+  `${currentDate.getDate()}.${currentDate.getMonth() + 1}.${currentDate.getFullYear()}`
 );
 
 interface dateObject {
@@ -31,7 +31,7 @@ export class AppComponent {
   public tooltip: string = 'Подсказка';
   protected date: dateObject = {
     year: currentDate.getFullYear(),
-    month: currentDate.getMonth(),
+    month: currentDate.getMonth() + 1,
     day: currentDate.getDate(),
     fullDate,
   };
